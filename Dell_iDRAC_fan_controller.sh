@@ -83,10 +83,11 @@ function disable_third_party_PCIe_card_Dell_default_cooling_response () {
 # }
 
 # Prepare traps in case of container exit
-function gracefull_exit () {
-  apply_Dell_fan_control_profile
-  enable_third_party_PCIe_card_Dell_default_cooling_response
-  echo "/!\ WARNING /!\ Container stopped, Dell default dynamic fan control profile applied for safety."
+function gracefull_exit() {
+  # apply_Dell_fan_control_profile
+  # enable_third_party_PCIe_card_Dell_default_cooling_response
+  # echo "/!\ WARNING /!\ Container stopped, Dell default dynamic fan control profile applied for safety."
+  echo "/!\ WARNING /!\ Container stopped"
   exit 0
 }
 
